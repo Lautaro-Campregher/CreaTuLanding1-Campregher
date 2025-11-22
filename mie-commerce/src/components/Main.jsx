@@ -1,11 +1,14 @@
 import Button from "./Button";
+import Catalogo from "./Catalogo";
 
 function Main() {
   return (
-    <main>
-      <h2>Acerca de nosotros</h2>
-      <Button />
-    </main>
+    <>
+      <main>
+        <h2>Catalogo</h2>
+        <Catalogo />
+      </main>
+    </>
   );
 }
 

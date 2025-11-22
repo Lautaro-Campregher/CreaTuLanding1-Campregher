@@ -1,11 +1,12 @@
 $primary-color: #3498db;
 $secondary-color: grey;
 
-:root {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: $primary-color;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -29,8 +30,44 @@ body {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .btn {
   background-color: bisque;
   border: solid 2px black;
   border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  background-color: grey;
+  border-radius: 5px;
+
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: inset;
+      width: fit-content;
+      height: 300px;
+      padding: 10px;
+
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
 }

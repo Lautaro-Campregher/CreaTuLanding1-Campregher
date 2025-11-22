@@ -4,8 +4,7 @@ function Header() {
       <h1>Magnolia Mates</h1>
       <nav>
         <a href="">Inicio</a>
-        <a href="">Catalogo</a>
-        <a href="">Contacto</a>
+        <a href="">Carrito</a>
       </nav>
     </header>
   );
