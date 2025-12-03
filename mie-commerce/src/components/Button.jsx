@@ -1,4 +1,4 @@
-import "./Counter";
+import "./CounterContainer";
 
 function Button({ resetCounter }) {
   return (
